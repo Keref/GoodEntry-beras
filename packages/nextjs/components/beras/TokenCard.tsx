@@ -60,7 +60,7 @@ const TokenCard = ({ tokenAddress, width }: { tokenAddress: string; width?: stri
           <span className="md:block hidden text-neutral">Market Cap: </span>
           <span className="md:hidden block text-neutral">MC: </span>
           <p className="md:text-xl text-sm text-accent font-bold md:text-start text-center m-0 p-0 ">
-            {roundNumber(Number(formatEther(mcap || BigInt(0))), 2)} {targetNetwork.nativeCurrency.symbol}
+            {roundNumber(Number(formatEther(mcap || BigInt(0))), 4)} {targetNetwork.nativeCurrency.symbol}
           </p>
         </div>
       </div>

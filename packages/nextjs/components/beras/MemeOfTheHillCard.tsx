@@ -114,14 +114,14 @@ export const MemeOfTheHillCard = ({ width }: { width: number | null }) => {
                       <span className="text-neutral">Market Cap:</span>
                       <div className="flex flex-row pt-0 m-0">
                         <p className="text-accent m-0 p-0 md:pl-0 pl-1">
-                          {roundNumber(Number(formatEther(mcap || BigInt(0))), 2)} {targetNetwork.nativeCurrency.symbol}
+                          {roundNumber(Number(formatEther(mcap || BigInt(0))), 6)} {targetNetwork.nativeCurrency.symbol}
                         </p>
                       </div>
                     </div>
                     <div className="md:w-1/3 w-full flex md:flex-col flex-row">
                       <span className="text-neutral">Hourly Volume:</span>
                       <p className="text-accent m-0 p-0 md:pl-0 pl-1">
-                        {roundNumber(Number(formatEther(tokenVolume || BigInt(0))), 2)}{" "}
+                        {roundNumber(Number(formatEther(tokenVolume || BigInt(0))), 6)}{" "}
                         {targetNetwork.nativeCurrency.symbol}
                       </p>
                     </div>
